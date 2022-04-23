@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+}
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #dbf1ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.load { 
+    width: 180px;
+    height: 180px;
+    display: grid;
+    gap: 7px;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 3px;
+}
+.load span {
+    background-color: #00afff;
+    opacity: 0;
+    animation: animate 1.4s infinite linear;
+    animation-delay: calc( var(--v) * 350ms );
+}
+@keyframes animate {
+    0% {
+        opacity: 0;
+    }
+    24% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.6;
+    }
+    48% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

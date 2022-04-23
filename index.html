@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="load">
+            <span style="--v: 0; order: 1;"></span>
+            <span style="--v: 1; order: 2;"></span>
+            <span style="--v: 2; order: 4;"></span>
+            <span style="--v: 3; order: 3;"></span>
+        </div>
+        <div class="text">
+            Loading...
+        </div>
+    </div>
+
+    <article>
+        <h1>Heading</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deleniti natus explicabo placeat harum fugiat eligendi amet sit! Exercitationem iure blanditiis error amet possimus aperiam mollitia laboriosam quidem doloremque excepturi.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum molestias quasi non repellendus harum. Magni officia, molestias labore impedit cum expedita corrupti ratione sequi libero accusantium reiciendis adipisci. A, culpa.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus tempore incidunt nemo. Tenetur provident culpa dolore ex laudantium non architecto ratione! Nesciunt ducimus laudantium consequatur blanditiis voluptatum ea dolor omnis.
+        </p>
+    </article>
+
+    <script>
+        let obj = document.querySelector(".container");
+
+        setTimeout(() => {
+            obj.style.display = "none";
+        }, 3000); 
+    </script>
+</body>
+</html>
