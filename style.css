@@ -27,6 +27,7 @@ body {
     gap: 7px;
     grid-template-columns: 1fr 1fr;
     border-radius: 3px;
+    transform: rotate(45deg);
 }
 .load span {
     background-color: #00afff;
